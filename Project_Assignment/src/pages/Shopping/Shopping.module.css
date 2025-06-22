@@ -1,0 +1,43 @@
+.shop1 {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - var(--navbar-height, 40px));
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.shop1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/img_2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: scale(1.02);
+  z-index: -1;
+}
+.shop1{
+    color: rgb(255, 255, 255);
+}
+.shop1 h1{
+    font-size: 55px;
+    text-shadow:1px 2px 5px rgb(0, 0, 0);
+}
+.shop1 p{
+    font-size: 20px;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+    margin: 15px ;
+}
+.shop1 h2{
+    text-shadow: 1px 1px 6px rgba(0, 0, 0);
+    font-size: 30px;
+}
+

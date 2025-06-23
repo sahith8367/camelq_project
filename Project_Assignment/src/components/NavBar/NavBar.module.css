@@ -46,3 +46,6 @@
     color: black;
     font-weight: 500;
 }
+.navbar a:hover{
+    color: rgb(154, 152, 152);
+}

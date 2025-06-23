@@ -1,12 +1,22 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
 import NavBar from '../../components/NavBar/NavBar'
+import Footer from '../../components/Footer/Footer'
 
 const Home = () => {
   return (
     <div>
         <NavBar/>
-        <h1>Welcome to Home</h1>
+        <div>
+          Grocery
+          </div>
+        <div>
+          Shoping
+          </div>
+        <div>
+          Transport
+        </div>
+        <Footer/>
     </div>
   )
 }

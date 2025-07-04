@@ -1,0 +1,31 @@
+.tranav{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    height: 40px;
+    
+    background-color: rgb(255, 255, 255);
+    min-width: 650px;
+    max-width: 1545px;
+    color: rgb(0, 0, 0);
+}
+.tranav ul{
+    width: 60%;
+    display: flex;
+    list-style: none;
+    gap: 5%;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 13px;
+}
+.tranav ul li{
+    font-weight: 500;
+    
+}
+.tranav h1{
+    font-size: medium;
+}
+.tranav a{
+    text-decoration: none;
+    color: black;
+}

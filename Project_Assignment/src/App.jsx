@@ -7,6 +7,7 @@ import Shopping from './pages/Shopping/Shopping';
 import Transport from './pages/Transport/Transport';
 import Login from './pages/Login/Login';
 import Signin from './pages/Signin/Signin';
+import Upload from './pages/Shopping/Upload';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path='/home' element={<Home/>}/>
         <Route path="/grocery" element={<Grocery/>}/>
         <Route path='/shopping' element={<Shopping/>}></Route>
+        <Route path='/shopping/upload' element={<Upload/>}></Route>
         <Route path='/transport' element={<Transport/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/signin" element={<Signin/>}/>

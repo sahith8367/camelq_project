@@ -36,7 +36,7 @@ const Footer = () => {
                 <li>xxxx Building</li>
                 <li>xxxx City</li>
                 <li>xxxx State , India</li>
-
+                <li>Sahith8367@gmail.com</li>
             </ul>
         </div>
     </div>

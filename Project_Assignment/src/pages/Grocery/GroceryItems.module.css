@@ -1,0 +1,71 @@
+
+
+
+.Mcard ul{
+    display: flex;  
+    flex-wrap: wrap;  
+    justify-content: space-evenly;
+}
+.Mcard ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    margin: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.53);
+    padding-top: 10px;
+    width: 250px;
+    
+
+
+}
+
+.Mcard ul li img{
+    width: 200px;
+    height: 250px;
+    border-radius: 25px;
+    margin-top: none;
+    padding: none;
+}
+.Mcard ul li h1{
+    font-size: 12px;
+    color: rgb(125, 87, 34);
+    text-align: center;
+}
+.Mcard ul li p{
+    font-size: 12px;
+    width: 200px;
+    text-align: center;
+
+}
+.h1mens{
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.btns button{
+    padding:5px 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: rgb(253, 253, 253);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 1px 1px 3px rgb(109, 109, 109);
+}
+.btns button:hover{
+    color:aliceblue;
+    background:linear-gradient(rgba(130, 0, 0, 0.521),rgb(130, 0, 0),rgb(137, 2, 2));
+}
+.Mcard ul li:hover{
+    background:linear-gradient(rgb(255, 237, 240),rgb(255, 255, 255),rgb(255, 237, 240));
+}
+
+

@@ -1,55 +1,84 @@
-.shop1 {
-  position: relative;
-  width: 100%;
-  height: calc(100vh - var(--navbar-height, 40px));
-  overflow: hidden;
+.nav{
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.shop_nav{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    height: 40px;
+    max-width: 1545px;
+    background-color: rgb(255, 255, 255);
+    min-width: 650px;
+    color: rgb(0, 0, 0);
+}
+.shop_nav ul{
   display: flex;
-  justify-content: center;
+  list-style: none;
+  gap: 6% ;
+  width: 60%;
   align-items: center;
-  flex-direction: column;
+  justify-content:center ;
+}
+.shop_nav ul li{
+  font-size: 13px;
+}
+.shoplogo h1{
+  font-size: medium;
+}
+.shoplogo p{
+  font-size: 13px;
+  font-weight: 500;
+}
+.shoplogo{
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  gap: 4px;
+  width: 20%;
+}
+.shop_nav a{
+  text-decoration: none; 
+  color: black;
 
 }
-
-.shop1::before {
-  content: '';
-  position: absolute;
+.shop_nav p{
+  font-size: 13px;
+  font-weight: 500;
+  color: black;
+}
+.shop_nav{
+  position: sticky;
+  z-index: 1;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('../../assets/img_2.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  transform: scale(1.02);
-  z-index: -1;
 }
 .shop1{
-    color: rgb(255, 255, 255);
+  background-image: url('../../assets/img_2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 5px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 }
 .shop1 h1{
-    font-size: 55px;
-    text-shadow:1px 2px 5px rgb(0, 0, 0);
+  font-size :xxx-large;
+  font-weight: 600;
 }
 .shop1 p{
-    font-size: 20px;
-    text-shadow: 1px 1px 3px rgb(0, 0, 0);
-    margin: 15px ;
+  font-weight: 600;
 }
-.shop1 h2{
-    text-shadow: 1px 1px 6px rgba(0, 0, 0);
-    font-size: 30px;
+.liked{
+  
+  color: red;
 }
-.input{
-  display:flex;
-  gap: 10px;
-  margin-top: 100px;
-}
-.input input,
-.input button{
-  padding: 10px;
-  border-radius: 20px;
-  background:rgba(255, 255, 255, 0.21);
-  color: white;
-  border: 1px solid rgb(215, 215, 215);
+.shop_nav ul li button{
+  border: none;
+  background-color: white;
 }

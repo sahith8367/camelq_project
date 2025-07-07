@@ -18,6 +18,50 @@ const Footwear = () => {
         };
         fetchdata();
     },[])
+    // adding items when onclick like button
+    const handleaddcart= async(items)=>{
+        console.log(items);
+        try{
+            const responce = await axios.post('http://127.0.0.1:8000/api/carts/' ,{
+      name: items.name,
+      cost: items.cost,
+      color: items.color,
+      about: items.about,
+      image: items.image,
+      } , {
+        headers:{
+          'Content-Type':'application/json',
+        },
+        
+         });
+         alert("item added to cart")
+        }catch(err){
+            console.log(err)
+        }
+        
+
+    }
+    const handleaddliked= async(items)=>{
+        console.log(items);
+        try{
+            const responce = await axios.post('http://127.0.0.1:8000/api/liked/' ,{
+      name: items.name,
+      cost: items.cost,
+      color: items.color,
+      about: items.about,
+      image: items.image,
+      } , {
+        headers:{
+          'Content-Type':'application/json',
+        },
+        
+         });
+         alert("item add to liked List")
+        }catch(err){
+            console.log(err)
+        }
+
+    }
   return (
     <div>
         <h1 className={Styles.h1mens}>Foot Wear</h1>
@@ -30,8 +74,8 @@ const Footwear = () => {
                     <h1>{items.cost}</h1>
                     <div className={Styles.btns}>
                         <button>BUY NOW</button>
-                        <button>🛒</button>
-                        <button>♡</button>
+                        <button onClick={()=>handleaddcart(items)}>🛒</button>
+                        <button onClick={()=>handleaddliked(items)}>♡</button>
                     </div>
                 </li>))}
             </ul>

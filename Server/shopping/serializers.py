@@ -1,6 +1,6 @@
 # your_app_name/serializers.py
 from rest_framework import serializers
-from .models import Dress, WomenDress, Kids, Beauty, FootWear,Grocery,CartDress,Cart,Liked
+from .models import Dress, WomenDress, Kids, Beauty, FootWear,Grocery,CartDress,Cart,Liked,Grocerycart,GroceryLiked
 
 # Remember to fix the __str__ method in FootWear model for self.subject
 
@@ -47,4 +47,14 @@ class CartSerializer(serializers.ModelSerializer):
 class LikedSerializer(serializers.ModelSerializer):
     class Meta:
         model = Liked
+        fields = '__all__'
+
+class GroceryCartSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Grocerycart
+        fields = '__all__'
+
+class GroceryLikedSerializer(serializers.ModelSerializer):
+    class Meta:
+        model =GroceryLiked
         fields = '__all__'

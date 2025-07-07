@@ -69,3 +69,51 @@
 }
 
 
+.listCnt{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  list-style: none;
+  gap: 40px;
+}
+.listCnt li{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 1px 1px 5px  rgb(77, 75, 75);
+    padding: 10px;
+    font-weight: 600;
+    font-size: large;
+    height: 500px;
+}
+.listCnt li button{
+    width:60%;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    background-color: red;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 25px;
+}
+.groh1{
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.btn{
+    background-color:aliceblue;
+    border: 1px solid black;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 5px 10px;
+    margin-bottom: 2%;
+}

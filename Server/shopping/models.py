@@ -66,3 +66,15 @@ class Cart(models.Model):
     color = models.CharField(max_length=100)
     about = models.CharField(max_length=400)
     image = models.CharField(max_length=500)
+
+class Grocerycart(models.Model):
+    name = models.CharField(max_length=100)
+    cost = models.CharField(max_length=15)
+    quantity = models.CharField(max_length=100)
+    image = models.CharField(max_length=200)
+
+class GroceryLiked(models.Model):
+    name = models.CharField(max_length=100)
+    cost = models.CharField(max_length=200)
+    quantity = models.CharField(max_length=100)
+    img = models.CharField(max_length=200)

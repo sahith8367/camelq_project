@@ -36,10 +36,11 @@ const Kids = () => {
         },
         
          });
-         console.log(responce);
+         alert("item added to cart")
         }catch(err){
             console.log(err)
         }
+        
 
     }
     const handleaddliked= async(items)=>{
@@ -57,7 +58,7 @@ const Kids = () => {
         },
         
          });
-         console.log(responce);
+         alert("item add to liked List")
         }catch(err){
             console.log(err)
         }

@@ -10,6 +10,9 @@ from .views import (
     CartDressListCreateView,CartDressDetailView,
     CartListCreateView,CartDetailView,
     LikedDetailView,LikedListCreateView,
+    GroceryCartView,GroceryCartCreate,
+    GroceryLikedCreate,GroceryLikedListView
+
 )
 
 urlpatterns = [
@@ -48,5 +51,10 @@ urlpatterns = [
     path('liked/', LikedListCreateView.as_view(), name='liked'),
     path('liked/<int:pk>/', LikedDetailView.as_view(), name='liked'),
 
+    path('grocerycart/',GroceryCartCreate.as_view(),name='grocery cart'),
+    path('grocerycart/<int:pk>/',GroceryCartView.as_view(),name='grocery name'),
+
+    path('groceryliked/' ,GroceryLikedCreate.as_view(),name='grocery'),
+    path('groceryliked/<int:pk>/',GroceryLikedListView.as_view(),name='grocery liked'),
 
 ]

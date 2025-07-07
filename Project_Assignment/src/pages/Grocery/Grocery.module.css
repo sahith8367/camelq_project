@@ -24,6 +24,12 @@
 .nav ul li{
   font-size: 13px;
   font-weight: 500;
+  
+}
+.nav ul li button{
+  border: none;
+  background-color: white;
+  padding: 0px 40px ;
 }
 .nav ul{
   display: flex;
@@ -49,4 +55,9 @@
 }
 .gro_1 p{
   text-align: center;
+}
+.nav{
+  position: sticky;
+  z-index: 1;
+  top: 0;
 }

@@ -1,6 +1,6 @@
 # your_app_name/views.py
 from rest_framework import generics
-from .models import Dress, WomenDress, Kids, Beauty, FootWear ,Grocery,CartDress,Cart,Liked
+from .models import Dress, WomenDress, Kids, Beauty, FootWear ,Grocery,CartDress,Cart,Liked,Grocerycart,GroceryLiked
 from .serializers import (
     DressSerializer,
     WomenDressSerializer,
@@ -10,7 +10,9 @@ from .serializers import (
     GrocerySerializer,
     CartDressSerializer,
     CartSerializer,
-    LikedSerializer
+    LikedSerializer,
+    GroceryCartSerializer,
+    GroceryLikedSerializer
 )
 
 # Dress Views
@@ -93,4 +95,18 @@ class LikedDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Liked.objects.all()
     serializer_class = LikedSerializer
 
+class GroceryCartCreate(generics.ListCreateAPIView):
+    queryset = Grocerycart.objects.all()
+    serializer_class=GroceryCartSerializer
 
+class GroceryCartView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Grocerycart.objects.all()
+    serializer_class = GroceryCartSerializer
+
+class GroceryLikedCreate(generics.ListCreateAPIView):
+    queryset=GroceryLiked.objects.all()
+    serializer_class=GroceryLikedSerializer
+
+class GroceryLikedListView(generics.RetrieveUpdateDestroyAPIView):
+    queryset=GroceryLiked.objects.all()
+    serializer_class=GroceryLikedSerializer

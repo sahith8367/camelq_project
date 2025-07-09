@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect,useState } from 'react';
 import axios from 'axios';
 import Styles from './GroceryItems.module.css'
+import {NavLink} from 'react-router-dom';
 
 const GroceryItems = () => {
     const [Data , setData] = useState([]);
@@ -11,6 +12,7 @@ const GroceryItems = () => {
         setBuy(items);
         setIsBuy(true);
     }
+    
 
     useEffect(()=>{
         const fetchdata = async()=>{
@@ -54,10 +56,20 @@ const GroceryItems = () => {
     const handleRender=()=>{
         if(isbuy==true){
             return (
-                <div>
+                <div className={Styles.itemS}><div className={Styles.itembuy}>
                     <img src={buy.image} alt="image" />
-                    {buy.name}
-                    {buy.cost}
+                    <h1>{buy.name}
+                    {buy.cost}</h1>
+                    <div className={Styles.form}>
+                        <input type="text" placeholder='Full Name' />
+                        <input type="number" placeholder='Mobile Number' />
+                        <input type="email" placeholder='E-Mail' />
+                        <input type="text" placeholder='Hno , Street/Village' />
+                        <input type="text" placeholder='City , District'/>
+                        <input type="text" placeholder='Postal pin code'/>
+                        <div className={Styles.BTN}><button>CONFORM</button><NavLink to='/grocery'><button >CANCLE</button></NavLink></div>
+                    </div>
+                </div>
                 </div>
             );
             

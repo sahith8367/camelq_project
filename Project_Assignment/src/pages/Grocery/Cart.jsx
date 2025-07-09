@@ -45,6 +45,7 @@ const Cart = () => {
                                     <button onClick={()=>handledelete(items.id)}>REMOVE ITEM</button>
                                 </div>
                                 
+                                
                             </li>))}
             </ol>
         </div>

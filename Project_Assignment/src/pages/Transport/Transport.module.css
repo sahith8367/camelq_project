@@ -18,9 +18,10 @@
     font-weight: 500;
     font-size: 13px;
 }
-.tranav ul li{
-    font-weight: 500;
-    
+
+.tranav ul li button{
+    border: none;
+    background-color: white;font-weight: 500;
 }
 .tranav h1{
     font-size: medium;
@@ -28,4 +29,106 @@
 .tranav a{
     text-decoration: none;
     color: black;
+}
+.flight1{
+    background:url("C:\Users\DELL\Desktop\Projects\camelQ\Project_Assignment\src\assets\Screenshot 2025-07-08 112720.png");
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: xx-large;
+    text-shadow: 2px 2px 5px rgb(80, 78, 78);
+}
+
+.flight3{
+    background:url("C:\Users\DELL\Desktop\Projects\camelQ\Project_Assignment\src\assets\image copy 2.png");
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: xx-large;
+    text-shadow: 2px 2px 5px rgb(80, 78, 78);
+    
+}
+.flight2{
+    background:url("C:\Users\DELL\Desktop\Projects\camelQ\Project_Assignment\src\assets\image copy.png");
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: xx-large;
+    text-shadow: 2px 2px 5px rgb(80, 78, 78);
+    
+}
+.form1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+    margin: auto;
+    box-shadow: 1px 1px 5px black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.form1 h1{
+    font-weight: 300;
+    background-color: black;
+    width:100%;
+    color: white;
+    text-align: center;
+}
+.fromto{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.fromto input , .date input{
+    padding: 5px 20px;
+}
+.seat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-style:italic;
+    color: black;
+}
+.gender , .rtn{
+    display: flex;
+    gap: 20px;
+}
+.gender select{
+    padding:5px 5px;
+}
+.book button{
+    padding: 6px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.name input{
+    padding: 5px 20px;
 }

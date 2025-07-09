@@ -117,3 +117,51 @@
     padding: 5px 10px;
     margin-bottom: 2%;
 }
+.itembuy{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: 10%;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+}
+.itembuy img{
+    width: 400px;
+    border-radius: 10px;
+}
+.itembuy h1{
+    padding-top: 20px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 20px;
+    padding-top: 20px;
+}
+.form input{
+    padding: 5px 20px ;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px rgb(55, 53, 53);
+}
+.itemS{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.BTN{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+}
+.BTN button{
+    padding: 5px 25px;
+    border: none;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px rgb(55, 53, 53);
+}
